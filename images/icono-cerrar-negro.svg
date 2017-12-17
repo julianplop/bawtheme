@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1729.268 645.732 18.536 18.536">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0f0f0f;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="icono_cerrar_negro" data-name="icono cerrar negro" transform="translate(-3526 332)">
+    <line id="Line_2" data-name="Line 2" class="cls-1" x2="15" y2="15" transform="translate(1798.5 315.5)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-1" x1="15" y2="15" transform="translate(1798.5 315.5)"/>
+  </g>
+</svg>

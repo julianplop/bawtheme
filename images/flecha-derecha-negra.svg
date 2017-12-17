@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6199.59 1789 30.627 32.069">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0f0f0f;
+        stroke: #0f0f0f;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="flecha_derecha_negra" data-name="flecha derecha negra" transform="translate(6229.217 1820.068) rotate(180)">
+    <g id="Group_364" data-name="Group 364" transform="translate(0 0)">
+      <path id="Path_321" data-name="Path 321" class="cls-1" d="M27.974,14.382H2.026L12.68,1.049a.639.639,0,0,0-.131-.915.639.639,0,0,0-.915.131L.131,14.644A.929.929,0,0,0,0,15.036H0a.7.7,0,0,0,.131.392l11.5,14.379a.807.807,0,0,0,.523.261.929.929,0,0,0,.392-.131.7.7,0,0,0,.131-.915L2.026,15.689H27.974a.654.654,0,1,0,0-1.307Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>

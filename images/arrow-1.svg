@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1683.6 838.112 129.815 103.701">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0f0f0f;
+        stroke: #0f0f0f;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="ARROW1" transform="translate(1552.6 629.465)">
+    <path id="Path_1681" data-name="Path 1681" class="cls-1" d="M123.3,47.4H14.564L55.146,6.681a3.841,3.841,0,0,0,0-5.515,3.842,3.842,0,0,0-5.515,0L0,50.8,49.772,100.57a3.756,3.756,0,0,0,5.373,0,4.01,4.01,0,0,0,0-5.656L15.13,54.474H123.441a3.7,3.7,0,0,0,3.959-3.535A3.913,3.913,0,0,0,123.3,47.4Z" transform="translate(259.4 311.348) rotate(180)"/>
+  </g>
+</svg>

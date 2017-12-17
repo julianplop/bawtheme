@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10501.396 1420.515 33.896 53.77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6c96a;
+        stroke: #e6c96a;
+      }
+    </style>
+  </defs>
+  <g id="flecha_abajo_amarilla" data-name="flecha abajo amarilla" transform="translate(-10468 1421.015) rotate(90)">
+    <path id="Path_859" data-name="Path 859" class="cls-1" d="M52.055,15.734H2.217L13.872,1.147a.7.7,0,0,0-.143-1,.7.7,0,0,0-1,.143L.143,16.02A1.016,1.016,0,0,0,0,16.449H0a.767.767,0,0,0,.143.429L12.728,32.61a.883.883,0,0,0,.572.286,1.016,1.016,0,0,0,.429-.143.769.769,0,0,0,.143-1L2.217,17.165H52.055a.715.715,0,1,0,0-1.43Z" transform="translate(52.77 32.896) rotate(180)"/>
+  </g>
+</svg>

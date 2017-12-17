@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="598.268 622.25 27.844 16.836">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6c96a;
+      }
+    </style>
+  </defs>
+  <g id="sobre_amarillo" data-name="sobre amarillo" transform="translate(516.977 598.25)">
+    <g id="Group_3" data-name="Group 3" transform="translate(81.29 24)">
+      <path id="Path_22" data-name="Path 22" class="cls-1" d="M8.943,976.362a1.956,1.956,0,0,0-.789.162l12.141,10.351a1.128,1.128,0,0,0,1.255,0l12.141-10.351a1.956,1.956,0,0,0-.789-.162Zm-1.73,1.062A1.947,1.947,0,0,0,7,978.3v12.951A1.938,1.938,0,0,0,8.943,993.2H32.9a1.938,1.938,0,0,0,1.943-1.943V978.3a1.947,1.947,0,0,0-.212-.88L22.389,987.856a2.273,2.273,0,0,1-2.934,0Z" transform="translate(-7 -976.362)"/>
+    </g>
+  </g>
+</svg>
