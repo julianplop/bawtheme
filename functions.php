@@ -45,13 +45,7 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 25);
 
 
-//checkout
-remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
-add_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_coupon_form', 15 );
-
-
-
-
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
 
 
 //addd custom logo
@@ -270,20 +264,45 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment
 //    add_filter( 'woocommerce_variable_price_html', 'iconic_variable_price_format', 10, 2 );
 
 
-
-
-// Hook in
-add_filter( 'woocommerce_checkout_fields' , 'my_theme_custom_override_checkout_fields' );
-
-// Our hooked in function - $fields is passed via the filter!
-function my_theme_custom_override_checkout_fields( $fields ) {
-     foreach ($fields as $fieldset) {
-         foreach ($fieldset as $field) {
-             $field['class'] = array('form-input');
-         }
-     }
-     return $fields;
+/**
+ * Get taxonomies terms links.
+ *
+ * @see get_object_taxonomies()
+ */
+function wpdocs_custom_taxonomies_terms_links() {
+    // Get post by post ID.
+    if ( ! $post = get_post() ) {
+        return '';
+    }
+ 
+    // Get post type by post.
+    $post_type = $post->post_type;
+ 
+    // Get post type taxonomies.
+    $taxonomies = get_object_taxonomies( $post_type, 'objects' );
+ 
+    $out = array();
+ 
+    foreach ( $taxonomies as $taxonomy_slug => $taxonomy ){
+ 
+        // Get the terms related to post.
+        $terms = get_the_terms( $post->ID, $taxonomy_slug );
+ 
+        if ( ! empty( $terms ) ) {
+            $out[] = "<h2>" . $taxonomy->label . "</h2>\n<ul>";
+            foreach ( $terms as $term ) {
+                $out[] = sprintf( '<li><a href="%1$s">%2$s</a></li>',
+                    esc_url( get_term_link( $term->slug, $taxonomy_slug ) ),
+                    esc_html( $term->name )
+                );
+            }
+            $out[] = "\n</ul>\n";
+        }
+    }
+    return implode( '', $out );
 }
+?>
+
 
   
 

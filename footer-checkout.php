@@ -7,6 +7,7 @@
 
 	$( "input[name='beneficiario'][value='No']" ).prop('checked',true);
 	$(".input-text").addClass("form-input");
+	$(".checkout_coupon").css('display', 'block !important')
 
 
 	$("input[name='beneficiario'][value='Si']").click(function() {

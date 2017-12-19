@@ -3388,6 +3388,81 @@ div.wpcf7-mail-sent-ng {
     position: relative !important;
   }
 
+  .woocommerce form .form-row .required {
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none !important;
+  }
+
+    .select2-results{
+
+      color:black !important;
+    }
+
+    .select2-container .select2-selection--single{
+
+      padding: 7px 15px !important;
+      height: auto !important;
+      border: 2px solid rgb(0, 0, 0) !important;
+      border-radius: 0px !important;
+
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        border-width: 6px 6px 0 6px !important;
+        top: 90% !important;
+        left:-17% !important;
+    }
+
+    .create-account {
+      display:none !important;
+    }
+
+    #beneficiario_field label{
+      float: left;
+      margin-right: 15px;
+      margin-top: 15px;
+
+    }
+
+    #payment{
+
+      margin-top: 15px !important;
+      margin-bottom: 30px !important;
+
+    }
+
+    .place-order .button{
+
+      background-color: black !important;
+      border-radius: 0px !important ;
+      padding: 20px 40px !important;
+
+    }
+
+    .woocommerce-error::before, .woocommerce-info::before, .woocommerce-message::before{
+      content:none !important;
+    }
+
+    .tienes-cupon{
+      position: fixed;
+      top: 0;
+      right: 17px;
+      background-color: #161616;
+      padding: 15px 43px;
+      color: white;
+      font-weight: 700;
+      z-index: 2;
+      text-decoration: none;
+    }
+
+
+    .checkout_coupon .button{
+
+
+      padding: 16px 15px !important;
+    } 
+
+      
 
 
 
@@ -3420,6 +3495,52 @@ div.wpcf7-mail-sent-ng {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px) {
+
+.checkout-cont{
+  width: 50%;
+}
+
+
+.checkout-txt-cont{
+  width:47%;
+}
+
+.woocommerce-message{
+
+    margin-top:50px;
+}
+
+
+}
 
 
 
@@ -3642,8 +3763,9 @@ IPAD
     font-size: 4.5em;
     line-height: 22px;
   }
-  .checkout {
+  .checkout-cont {
     width: 55%;
+
   }
   .producto-inner {
     width: 90%;
@@ -3668,7 +3790,7 @@ IPAD
     -ms-flex-align: center;
     align-items: center;
   }
-}
+
 
 
 
@@ -4093,8 +4215,14 @@ SMARTPHONE
   .modal-inner {
     width: 100%;
   }
-  .checkout {
+  .checkout-cont {
     width: 100%;
+    margin-top: 80px;
+    height: auto;
+  }
+  .tienes-cupon {
+    padding: 30px 43px;
+  }
   }
   .checkout-subtotal-txt {
     font-size: 10px;
