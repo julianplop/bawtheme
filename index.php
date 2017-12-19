@@ -161,71 +161,12 @@ Template Name: Inicio
 
 
 
-<div class="pre-footer"></div>
-<div class="footer">
-<div class="footer-top">
-  <div class="footer-left">
-    <h2 class="footer-titulo left">Visítanos</h2>
-    <p class="footer-txt left">Sede Santa Bárbara<br>Cll 119 N 11D 30<br>Bogotá, Colombia<br>Horarios de Atención: 0:00 h - 0:00 h</p>
-  </div>
-  <div class="footer-center">
-    <h2 class="footer-titulo center">Síguenos</h2>
-    <div class="footer-social"><a href="#" class="footer-icono"></a><a href="#" class="footer-icono"></a><a href="#" class="footer-icono"></a></div>
-  </div>
-  <div class="footer-right">
-    <h2 class="footer-titulo right">Reservas</h2>
-    <p class="footer-txt right">Sede Santa Bárbara</p><a href="tel:+5714767634" class="footer-txt right">(+57) (1) 476 7634</a><a href="tel:+573045826892" class="footer-txt right"><span class="footer-txt-icon"></span> (+57) 304 582 6892</a></div>
-</div>
-<div class="footer-bottom"><a href="servicios.html" class="footer-sitemap-link">Servicios</a><a href="promociones.html" class="footer-sitemap-link">Promociones</a><a href="membresias.html" class="footer-sitemap-link">Membresías</a><a href="prensa.html" class="footer-sitemap-link">Prensa</a><a href="#" class="footer-sitemap-link" data-ix="contacto-open">Contacto</a><a href="preguntas-frecuentes.html" class="footer-sitemap-link">Preguntas Frecuentes</a></div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/webflow.js" type="text/javascript"></script>
-<!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-
-<script>
-
-  $('.menu-item').attr("data-ix", "open-dropdown").addClass("navbar-menu-item");
- 
+<?php get_footer(); ?>
 
 
 
 
-  $( ".menu-item a" ).hover(
-      function() {
-        $(this).parent().find('.sub-menu').css({
-      'visibility' : 'visible',
-      'opacity' : '1'
-     
-        });
-      }, function() {
-        $( this ).parent().find('.sub-menu').css({
-          'opacity' : '0',
-          'visibility' : 'hidden'
 
-        });
-      });
-
-
-      $( ".sub-menu" ).hover(
-      function() {
-        $(this).css({
-      'visibility' : 'visible',
-      'opacity' : '1'
-     
-        });
-      }, function() {
-        $( this ).css({
-          'opacity' : '0',
-          'visibility' : 'hidden'
-
-        });
-      });
-
-
-
-</script>
-</body>
-</html>
 
 
 

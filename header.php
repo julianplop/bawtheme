@@ -14,7 +14,7 @@
   <script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Playfair Display:regular,italic,700,700italic,900,900italic"]  }});</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-
+  <?php wp_head(); ?>
 </head>
 
 <body class="body">
@@ -47,6 +47,27 @@
             'container'  => 'false'
         ) );
       ?>
+
+      <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+ 
+            $count = WC()->cart->cart_contents_count;
+            ?><a class="cart-desktop " data-ix="open-dropdown" href="#" title="<?php _e( 'Mira tu pedido' ); ?>"><?php 
+            if ( $count >= 0 ) {
+                ?>
+                <div class=" cart-contents-count cart-number-desktop"><?php echo esc_html( $count ); ?></div><img src="<?php echo get_template_directory_uri(); ?>/images/noun_968248_cc.svg" class="cart-image">
+                <?php
+            }
+                ?></a>
+        
+        <?php } ?>
+
+
+
+      <!-- <div class="navbar-menu-icons w-hidden-medium w-hidden-small w-hidden-tiny">
+        
+        <a href="#" class="navbar-menu-item w-inline-block" data-ix="carrito-open"><img src="images/noun_968248_cc.svg" class="navbar-menu-item-img"></a>
+      
+      </div>  -->
 
         
     
@@ -88,73 +109,61 @@
         </a>
         <a class="navbar-menu-item w-inline-block" data-ix="hover-menu-2">
           <div class="navbar-menu-item-idioma-txt">EN</div>
-        </a><a href="#" class="navbar-menu-item w-inline-block" data-ix="carrito-open"><img src="images/noun_968248_cc.svg" class="navbar-menu-item-img"></a></div> -->
+        </a>
+        <a href="#" class="navbar-menu-item w-inline-block" data-ix="carrito-open"><img src="images/noun_968248_cc.svg" class="navbar-menu-item-img"></a>
+      
+      </div> -->
     </nav>
     <div class="navbar-menu-button w-nav-button">
       <div class="navbar-menu-button-icon w-icon-nav-menu"></div>
     </div>
-    <div class="modal-carrito-contacto" data-ix="cerrar-modal">
+    <div class="modal-carrito-contacto">
       <div class="modal-inner">
         <div class="modal-cont">
-          <div class="modal-contacto"><img src="images/icono-cerrar-negro.svg" class="modal-cerrar" data-ix="cerrar-modal">
-            <div class="modal-contacto-hola">Hola,<br>déjanos tus datos, tu mensaje<br>y hablaremos lo mas pronto posible</div>
+
+          <div class="modal-contacto"><img src="<?php echo get_template_directory_uri(); ?>/images/icono-cerrar-negro.svg" class="modal-cerrar">
+            <div class="modal-contacto-hola"><?php echo pll__('Hola,<br>déjanos tus datos, tu mensaje<br>y hablaremos lo más pronto posible'); ?></div>
             <div class="w-form">
-              <form id="wf-form-Contacto" name="wf-form-Contacto" data-name="Contacto"><input type="text" class="form-input w-input" maxlength="256" name="Nombre" data-name="Nombre" placeholder="Tu nombre" id="Nombre" required=""><input type="email" class="form-input w-input" maxlength="256" name="Correo" data-name="Correo" placeholder="Correo Electrónico" id="Correo" required=""><input type="text" class="form-input w-input" maxlength="256" name="Telefono" data-name="Telefono" placeholder="Teléfono" id="Telefono" required=""><textarea id="Mensaje" name="Mensaje" placeholder="Tu mensaje" maxlength="5000" data-name="Mensaje" required="" class="form-input w-input"></textarea>
+
+                <?php echo do_shortcode('[contact-form-7 id="61" title="ContactForm"]'); ?>
+
+              <!-- <form id="wf-form-Contacto" name="wf-form-Contacto" data-name="Contacto">
+              <input type="text" class="form-input w-input" maxlength="256" name="Nombre" data-name="Nombre" placeholder="Tu nombre" id="Nombre" required="">
+              <input type="email" class="form-input w-input" maxlength="256" name="Correo" data-name="Correo" placeholder="Correo Electrónico" id="Correo" required=""><input type="text" class="form-input w-input" maxlength="256" name="Telefono" data-name="Telefono" placeholder="Teléfono" id="Telefono" required=""><textarea id="Mensaje" name="Mensaje" placeholder="Tu mensaje" maxlength="5000" data-name="Mensaje" required="" class="form-input w-input"></textarea>
                 <div class="form-checkbox w-checkbox"><input type="checkbox" id="Terminos y Condiciones" name="Terminos-y-Condiciones" data-name="Terminos y Condiciones" required="" class="form-checkbox-icono w-checkbox-input"><label for="Terminos y Condiciones" class="form-checkbox-txt w-form-label">Acepto los términos y condiciones</label></div><input type="submit" value="Enviar" data-wait="Por favor espera..." class="boton-enviar w-button"></form>
-              <div class="success-message w-form-done">
-                <div>¡Gracias! Hemos recibido tu mensaje</div>
-              </div>
-              <div class="error-message w-form-fail">
-                <div>Lo sentimos, hay un error en tu mensaje</div>
-              </div>
+              
+         -->
             </div>
-            <div class="modal-contacto-texto"><a href="preguntas-frecuentes.html" class="modal-contacto-texto-link">Preguntas Frecuentes</a> / No se hacen reservas por mail</div>
-            <div class="modal-contacto-iconos"><a href="#" class="modal-contacto-iconos-item"></a><a href="#" class="modal-contacto-iconos-item"></a><a href="#" class="modal-contacto-iconos-item"></a><a href="#" class="modal-contacto-iconos-item"></a></div>
+            <div class="modal-contacto-texto"><a href="<?php echo site_url(); ?>/preguntas-frecuentes" class="modal-contacto-texto-link"><?php echo pll__('Preguntas Frecuentes</a> / No se hacen reservas por mail'); ?></div>
+            <div class="modal-contacto-iconos"><a href="#" class="modal-contacto-iconos-item"></a><a href="<?php echo get_option('facebook'); ?>" class="modal-contacto-iconos-item"></a><a href="<?php echo get_option('instagram'); ?>" class="modal-contacto-iconos-item"></a><a href="<?php echo get_option('twitter'); ?>" class="modal-contacto-iconos-item"></a></div>
+          
+          
           </div>
-          <div class="modal-carrito"><img src="images/icono-cerrar-negro.svg" class="modal-cerrar" data-ix="cerrar-modal">
-            <div class="modal-carrito-titulo">Tu pedido</div>
-            <div class="servicios-interna-item modal">
-              <div class="servicios-interna-top">
+
+
+
+
+          <div class="modal-carrito"><img src="<?php echo get_template_directory_uri(); ?>/images/icono-cerrar-negro.svg" class="modal-cerrar">
+
+       
+          <?php dynamic_sidebar( 'mini-cart' ); ?>
+
+            
+          
+              <!-- <div class="servicios-interna-top">
                 <h3 class="servicios-interna-sub">Pasión</h3>
-                <div class="servicios-interna-top-right modal">
-                  <div class="servicios-interna-comprar-numero modal">
-                    <div class="servicios-interna-comprar-mas"></div>
-                    <div class="servicios-interna-comprar-mas numero">1</div>
-                    <div class="servicios-interna-comprar-mas"></div>
-                  </div>
-                  <div class="servicios-interna-comprar-cont modal">
-                    <div class="servicios-interna-comprar-mas"></div>
-                    <div class="servicios-interna-comprar-carrito"></div>
-                  </div>
-                </div>
               </div>
+
               <div class="servicios-interna-linea"></div>
               <div class="servicios-interna-bottom">
                 <div class="servicios-interna-descripcion">Especificaciones del producto</div>
                 <div class="servicios-interna-precio">$190.000 COP</div>
-              </div>
-            </div>
-            <div class="servicios-interna-item modal">
-              <div class="servicios-interna-top">
-                <h3 class="servicios-interna-sub">Pasión</h3>
-                <div class="servicios-interna-top-right modal">
-                  <div class="servicios-interna-comprar-numero modal">
-                    <div class="servicios-interna-comprar-mas"></div>
-                    <div class="servicios-interna-comprar-mas numero">1</div>
-                    <div class="servicios-interna-comprar-mas"></div>
-                  </div>
-                  <div class="servicios-interna-comprar-cont modal">
-                    <div class="servicios-interna-comprar-mas"></div>
-                    <div class="servicios-interna-comprar-carrito"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="servicios-interna-linea"></div>
-              <div class="servicios-interna-bottom">
-                <div class="servicios-interna-descripcion">Especificaciones del producto</div>
-                <div class="servicios-interna-precio">$190.000 COP</div>
-              </div>
-            </div>
+              </div> -->
+     
+
+
+
+<!-- 
             <div class="modal-carrito-subtotal">
               <div class="modal-carrito-subtotal-texto">Subtotal</div>
               <div class="modal-carrito-subtotal-texto">$500.000 COP</div>
@@ -169,18 +178,39 @@
               <a class="boton-comprar w-inline-block">
                 <div class="boton-comprar-txt">Ir al checkout</div>
               </a>
-            </div>
+            </div> -->
+
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <div class="iconbar">
-    <div class="iconbar-icon"><img src="images/sobre-amarillo.svg" class="iconbar-icon-img"></div>
-    <div class="iconbar-icon" data-ix="contacto-open">
+    <div class="iconbar-icon" data-ix="contacto-open"><img src="<?php echo get_template_directory_uri(); ?>/images/sobre-amarillo.svg" class="iconbar-icon-img"></div>
+    <div class="iconbar-icon">
       <div class="navbar-menu-item-idioma-txt">EN</div>
     </div>
-    <div class="iconbar-icon" data-ix="carrito-open"><img src="images/noun_968248_cc.svg" class="iconbar-icon-img"></div>
+
+    <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+ 
+            $count = WC()->cart->cart_contents_count;
+            ?><a class="iconbar-icon" data-ix="carrito-open" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Mira tu pedido' ); ?>"><?php 
+            if ( $count >= 0 ) {
+                ?>
+                <div class="cart-contents-count cart-number"><?php echo esc_html( $count ); ?></div><img src="<?php echo get_template_directory_uri(); ?>/images/noun_968248_cc.svg" class="image">
+                <?php
+            }
+                ?></a>
+        
+        <?php } ?>
+  
+  
+  
   </div>
+
+
+
+  
   <div data-w-id="dc866dbc-654e-7558-25e6-13952ae8daf3" class="load-home"><img src="images/Logo-boutique.svg" data-w-id="d09e384d-ef59-5130-c820-c50364817315" class="logo-intro"></div>
   
