@@ -7,6 +7,35 @@ Template Name: Inicio
 <?php get_header(); ?>
 
 
+
+  
+<div data-w-id="dc866dbc-654e-7558-25e6-13952ae8daf3" class="load-home"><img src="<?php echo get_template_directory_uri(); ?>/images/Logo-boutique.svg"  class="logo-intro"></div>
+
+<div class="modal-promo-cont">
+    <div class="modal-inner promo">
+      <div class="modal-promo-cont-inner">
+        <div class="modal-promo"><img src="<?php echo get_template_directory_uri(); ?>/images/icono-cerrar-negro.svg" class="modal-cerrar promo" data-ix="cerrar-modal-promo">
+          <div class="modal-promo-img" style="background-image: url(<?php echo the_field('promo_imagen') ?>)"></div>
+          <div class="modal-promo-txt">
+            <div class="modal-promo-inner">
+              <div class="modal-promo-titulo-cont">
+                <h1 class="modal-promo-titulo"><?php echo the_field('promo_titulo') ?></h1>
+                <div class="modal-promo-sub"><?php echo the_field('promo_subtitulo') ?></div>
+              </div>
+              <?php echo the_field('promo_texto') ?>
+
+              <a class="boton-amarillo promo" href="<?php echo the_field('promo_link') ?>">
+                  
+                    <div class="boton-amarillo-txt">Ver Más</div>
+               
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div class="banner">
 <div class="banner-titulo">
   <div class="banner-titulo-cont">

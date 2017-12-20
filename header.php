@@ -209,8 +209,3 @@
   
   </div>
 
-
-
-  
-  <div data-w-id="dc866dbc-654e-7558-25e6-13952ae8daf3" class="load-home"><img src="images/Logo-boutique.svg" data-w-id="d09e384d-ef59-5130-c820-c50364817315" class="logo-intro"></div>
-  

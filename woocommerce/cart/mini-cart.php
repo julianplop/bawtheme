@@ -109,7 +109,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 	<p class="woocommerce-mini-cart__buttons buttons"><?php do_action( 'woocommerce_widget_shopping_cart_buttons' ); ?></p>
 
 	<script>
-		$( ".modal-cerrar" ).click(function() {
+		$( " .modal-carrito .modal-cerrar" ).click(function() {
 
 			
 				refreshminicart();

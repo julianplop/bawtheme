@@ -56,6 +56,120 @@
 	});
 
 
+	$(".modal-promo-cont").css({
+		'transition': 'transition: all 0.25s ease 0s',
+		'display':'flex'
+		
+	});
+
+	$(".modal-promo-cont-inner").css({
+		'transition': 'all 0.3s ease-in-out 0s',
+		'display':'flex'
+		
+	});
+
+
+	//animaciones
+
+	$(window).on("load", function() {
+
+		setTimeout(function(){
+			$(".modal-promo-cont").css({
+				'display' : 'none'
+			});
+			
+			if ($(window).width() > 767) {
+				setTimeout(function(){
+					run_promo();
+				},2000);
+	
+			}
+			
+		},500);
+
+		$(".modal-promo-cont").css({
+			'transition': 'all 0.3s ease-in-out 0s',
+			'display':'flex'
+		
+		});
+
+	});
+
+
+	function run_promo(){
+
+		$(".modal-promo-cont").css({
+			'transition': 'll 0.25s ease 0s, opacity 300ms ease-in-out',
+			'display':'flex',
+
+		});
+
+		$(".modal-promo-cont-inner").css({
+			'transition': 'all 0.3s ease-in-out 0s, width 300ms ease-in-out',
+			'display':'flex'
+		
+		});
+
+		$(".modal-promo").css({
+			'transition': 'opacity 300ms ease-in-out',
+			'display':'flex'
+		
+		});
+
+
+		setTimeout(function(){
+			$(".modal-promo-cont").css({
+				
+				'opacity':'1'
+			});
+
+			if ($(window).width() > 1366) {
+				$(".modal-promo-cont-inner").css({
+					'width':'40%'
+		
+				});
+			}
+
+			if ($(window).width() > 1050) {
+				$(".modal-promo-cont-inner").css({
+					'width':'70%'
+		
+				});
+			}
+			
+
+			if ($(window).width() < 1050) {
+				$(".modal-promo-cont-inner").css({
+					'width':'80%'
+		
+				});
+			}
+
+			if ($(window).width() < 991) {
+				$(".modal-promo-cont-inner").css({
+					'width':'100%'
+		
+				});
+			}
+
+
+			$(".modal-promo").css({
+				'opacity': '1',
+				
+		
+			});
+
+
+
+		},100);
+
+	}
+
+
+
+
+
+
 
 	
 
@@ -95,18 +209,34 @@
 	
 
 	//hover items
+	
 	$( ".menu-item a" ).hover(
-		function() {
-		$(this).parent().find('.sub-menu').css({
-			'visibility' : 'visible',
-			'opacity' : '1'
-			});
-		}, function() {
-			$( this ).parent().find('.sub-menu').css({
-				'opacity' : '0',
-				'visibility' : 'hidden'
-			});
-		}
+		
+
+				function() {
+
+					if ($(window).width() > 1200) {
+
+						$(this).parent().find('.sub-menu').css({
+						'visibility' : 'visible',
+						'opacity' : '1'
+						});
+				
+					}
+
+
+					
+					
+					}, function() {
+						$( this ).parent().find('.sub-menu').css({
+							'opacity' : '0',
+							'visibility' : 'hidden'
+						});
+					}
+
+				
+			
+		
 	);
 
 	//hover submenu
