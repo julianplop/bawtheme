@@ -915,6 +915,7 @@
   background-color: #fff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  overflow: auto;
 }
 
 .modal-contacto {
@@ -2174,7 +2175,7 @@
 .modal-carrito {
   display: none;
   width: 65%;
-  height: 85%;
+  height: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3132,18 +3133,18 @@
 }
 
 
-.reset_variations,
-.woocommerce-variation,
-.price,
-.tm-final-price-totals dt,
-.variations .label{
+.producto .reset_variations,
+.producto .woocommerce-variation,
+.producto .price,
+.producto .tm-final-price-totals dt,
+.producto .variations .label{
 
   visibility: hidden !important;
 
 
 }
 
-.single_add_to_cart_button{
+.producto .single_add_to_cart_button{
   margin-top: 15px;
   margin-bottom:15px;
   width: 50%;
@@ -3362,7 +3363,7 @@ div.wpcf7-mail-sent-ng {
 
   .woocommerce-mini-cart__buttons{
 
-      margin-top: 30%;
+      /* //margin-top: 30%; */
   }
 
   #nombre_regalo_field,
@@ -3461,6 +3462,13 @@ div.wpcf7-mail-sent-ng {
 
       padding: 16px 15px !important;
     } 
+
+
+
+    
+
+
+    
 
       
 

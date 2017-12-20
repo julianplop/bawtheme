@@ -103,6 +103,13 @@ get_header( 'shop' ); ?>
   </div> 
 
 
+
+
+
+
+  
+
+
 	
 
 <?php get_footer( 'shop' ); ?>

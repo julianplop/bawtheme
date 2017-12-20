@@ -49,6 +49,20 @@
 		'transition': 'all 0.3s ease-in-out 0s, opacity 200ms ease-in-out',
 	});
 
+	$(".w-dropdown-list").css({
+		'transition': 'all 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s, height 300ms ease-in-out',
+		'display':'flex'
+		
+	});
+
+
+
+	
+
+
+
+	
+
 	var wow = new WOW(
 			{
 				boxClass:     'wow',      // animated element css class (default is wow)
@@ -166,6 +180,9 @@
 	});
 
 
+	
+
+	
 
 
 	function openmodal(){
@@ -218,7 +235,7 @@
 		setTimeout(function(){
 			$(".modal-carrito").css({
 				'opacity' : '1',
-				'display' : 'flex'
+				'display' : 'block'
 			});
 		},500);
 
@@ -271,12 +288,22 @@
 			});
 
 			$(".modal-carrito").css({
-				'display':'none'
+				'display':'block'
 			});
 
 			
 		},800);
 
+	});
+
+
+	//clcik preguntas
+
+	$( ".preguntas-item" ).click(function() {
+
+		
+		
+		
 	});
 
 
