@@ -924,7 +924,7 @@
   display: -ms-flexbox;
   display:none;
   width: 65%;
-  height: 85%;
+  height: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1542,7 +1542,33 @@
 }
 
 .servicios-interna-titulo {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
+  color: #161616 !important;
+  text-decoration: none;
+}
+
+.servicios-title:hover {
+
+  color: #e0ca6a !important;
+}
+
+
+.servicios-title{
+
+  color: #161616;
+  margin-bottom: 40px;
+  
+}
+
+.ver-categoria-servicio{
+  margin-bottom:40px;
+  color: #a1a1a1;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-top: 15px;
+  text-underline-position: under;
+  display: block;
+
 }
 
 .servicios-interna-top {
@@ -1553,7 +1579,6 @@
   width: 100%;
   margin-bottom: 10px;
   padding-top: 5px;
-  padding-bottom: 5px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1572,8 +1597,8 @@
 }
 
 .servicios-interna-precio {
-  font-size: 1.2em;
-  font-weight: 700;
+  font-size: 1.0em;
+  font-weight: 600;
   text-align: right;
 }
 
@@ -1631,14 +1656,27 @@
 .servicios-interna-descripcion {
   font-size: 12px;
   text-align: left;
+  margin-top: 10px;
 }
 
+.link-masajes-servicios{
+  
+  color:#161616;
+  text-decoration: none;
+}
+
+
+.link-masajes-servicios:hover{
+  
+  color:#e0ca6a;
+  
+}
 .servicios-interna-top-right {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 45%;
+  width: auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;

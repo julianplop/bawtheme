@@ -288,7 +288,7 @@
 			});
 
 			$(".modal-carrito").css({
-				'display':'block'
+				'display':'none'
 			});
 
 			

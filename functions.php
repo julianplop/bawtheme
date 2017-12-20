@@ -265,7 +265,10 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment
 
 
 
-
+add_filter( 'formatted_woocommerce_price', 'span_custom_prc', 10, 5 );
+function span_custom_prc( $number_format, $price, $decimals, $decimal_separator, $thousand_separator){
+    return '<span class="custom-prc">'.$number_format.'</span>';
+}
 
   
 
