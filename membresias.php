@@ -6,6 +6,24 @@ Template Name: Membresias
 
 <?php get_header(''); ?>
 
+	<div class="message-woocommerce-membresias">
+		<?php
+			/**
+			 * woocommerce_before_single_product hook.
+			 *
+			 * @hooked wc_print_notices - 10
+			 */
+			do_action( 'woocommerce_before_single_product' );
+
+			if ( post_password_required() ) {
+				echo get_the_password_form();
+				return;
+			}
+		?>
+
+	
+	</div>
+
 
 
 <div class="banner">
@@ -20,9 +38,13 @@ Template Name: Membresias
   
   <div id="Contenido" class="contenido">
 
+      
+
 
 
     <div class="membresias-cont">
+
+   
 
          
 

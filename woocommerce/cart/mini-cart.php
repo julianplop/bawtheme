@@ -109,9 +109,9 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 	<p class="woocommerce-mini-cart__buttons buttons"><?php do_action( 'woocommerce_widget_shopping_cart_buttons' ); ?></p>
 
 	<script>
-		$( ".remove" ).click(function() {
+		$( ".modal-cerrar" ).click(function() {
 
-				console.log("plop1");	
+			
 				refreshminicart();
 				
 				
@@ -122,7 +122,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 
 			
 				setTimeout(function(){
-					console.log("plop2")
+					
 					window.location.href = window.location.href + "?#rf";
 				},500);
 

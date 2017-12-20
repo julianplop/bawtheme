@@ -85,13 +85,13 @@
 
 
 
-	if( location.hash == "#rf" ) { 
-		openmodal();
-		openmodal_carrito();
-	}
-	else {
+	// if( location.hash == "#rf" ) { 
+	// 	openmodal();
+	// 	openmodal_carrito();
+	// }
+	// else {
 		
-	}
+	// }
 	
 
 	//hover items
@@ -297,14 +297,6 @@
 	});
 
 
-	//clcik preguntas
-
-	$( ".preguntas-item" ).click(function() {
-
-		
-		
-		
-	});
 
 
 	
