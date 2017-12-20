@@ -123,7 +123,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 			
 				setTimeout(function(){
 					
-					window.location.href = window.location.href + "?#rf";
+					window.location.href = window.location.href;
 				},500);
 
 			}

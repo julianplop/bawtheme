@@ -195,7 +195,7 @@
     <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
  
             $count = WC()->cart->cart_contents_count;
-            ?><a class="iconbar-icon" data-ix="carrito-open" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Mira tu pedido' ); ?>"><?php 
+            ?><a class="iconbar-icon" data-ix="carrito-open" href="#" title="<?php _e( 'Mira tu pedido' ); ?>"><?php 
             if ( $count >= 0 ) {
                 ?>
                 <div class="cart-contents-count cart-number"><?php echo esc_html( $count ); ?></div><img src="<?php echo get_template_directory_uri(); ?>/images/noun_968248_cc.svg" class="image">

@@ -3182,24 +3182,7 @@
   font-weight: 700;
 }
 
-#horas{
- 
-  display: block;
-  padding: 10px 70px 10px 13px !important; 
-  max-width: 100%; height: auto !important; 
-  border: 1px solid #e3e3e3;
-  background: url("https://image.ibb.co/iMeAJv/selectbox_arrow.png") right center no-repeat; 
-  background-color: #fff; color: #444444; font-size: 12px; line-height: 16px !important; 
-  appearance: none; /* this is must */ 
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
-
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-}
-
-#tipo option,
-#horas option { 
+#tipo option { 
   padding: 0 4px;
   font-family: Poppins, sans-serif;
  }
@@ -3227,7 +3210,7 @@
   padding-top: 1em;
 }
 
-.producto .quantity label{
+.quantity label{
 
   clip: rect(1px,1px,1px,1px);
   height: 25px !important;
@@ -3236,57 +3219,6 @@
   width: 1px;
   word-wrap: normal!important;
   color: white;
-}
-
-.membresias-item-comprar .quantity label{
-
-  clip: rect(1px,1px,1px,1px);
-  height: 25px !important;
-  overflow: visible !important;
-  position: relative !important;
-  width: 1px;
-  word-wrap: normal!important;
-  color: white;
-  float: left;
-    margin-right: 85px;
-    margin-top: 10px;
-
-}
-
-.membresias-item-comprar .variations  .label{
-
-  display: none;
-
-}
-
-.membresias-item-comprar .reset_variations,
-.membresias-item-comprar .product_type_variable {
-  display: none;
-}
-
-
-.membresias-item-comprar button {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 100%;
-  padding: 15px 20px;
-  background-color: #e0ca6a;
-  cursor: pointer;
-  color: black;
-  font-size: 0.9em;
-  font-weight: 600;
-}
-
-
-.membresias-item-comprar .woocommerce-variation-price{
-
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-
-.membresias-item-comprar {
-  margin-top:15%;
 }
 
 
@@ -3508,7 +3440,7 @@ div.wpcf7-mail-sent-ng {
 
     }
 
-    .checkout-cont .woocommerce-error::before,  .checkout-cont .woocommerce-info::before,  .checkout-cont .woocommerce-message::before{
+    .woocommerce-error::before, .woocommerce-info::before, .woocommerce-message::before{
       content:none !important;
     }
 
@@ -3530,24 +3462,6 @@ div.wpcf7-mail-sent-ng {
 
       padding: 16px 15px !important;
     } 
-
-
-    .checkbox-cont .woocommerce-message{
-
-       margin-top: 20px;
-    }
-
-
-    .message-woocommerce-membresias .woocommerce-message{
-      margin-top: 20px;
-      z-index: 3;
-    }
-
-    .message-woocommerce-membresias .woocommerce-message a{
-      display: none;
-    }
-
-
 
 
 
@@ -3759,7 +3673,7 @@ IPAD
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 3;
+    z-index: 100;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3883,27 +3797,6 @@ IPAD
     -ms-flex-align: center;
     align-items: center;
   }
-
-  .membresias-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .memebresias-item-img {
-    width: 80%;
-    margin-bottom: 50px;
-  }
-
-  .membresias-item-comprar {
-    margin-top: 5%;
-}
 
 }
 
@@ -4194,8 +4087,21 @@ SMARTPHONE
     height: 85vw;
     margin-bottom: 50px;
   }
-
-  
+  .membresias-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .memebresias-item-img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
   .membresias-item-txt {
     width: 95%;
     margin-bottom: 50px;
