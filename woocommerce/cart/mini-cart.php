@@ -86,6 +86,19 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 									<div class="servicios-interna-descripcion"><?php echo $product_des; ?> </div>
 								
 								</div>
+
+								<a class="btnMinus"href=""></a>
+
+								<?php
+							
+									// echo do_shortcode('[add_to_cart id="'.$cart_item['product_id'].'" show_price="false" btn_text="+" class="btnAdd" ]');
+							
+									?>
+
+								
+							
+
+							
 								
 							
 						<?php endif; ?>

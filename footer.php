@@ -166,6 +166,14 @@
 	}
 
 
+	//pagination style
+	$( ".prev" ).empty();
+	$(".prev").prepend(' <img src="/images/flecha-izquiera-negra.svg" class="blog-pagination-flecha">');
+
+	$( ".next" ).empty();
+	$(".next").append(' <img src="/images/flecha-derecha-negra.svg" class="blog-pagination-flecha">');
+
+
 
 
 

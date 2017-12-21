@@ -2,6 +2,8 @@
 /*
 Template Name: Inicio
 */
+
+
 ?>
 
 <?php get_header(); ?>
